@@ -47,8 +47,7 @@ class Contenedor {
         }
     }
 
-    getById (id) {
-        console.log(id);
+    getById (id) {        
         try {
             if(!id){
                 return {status: "error", message: "Id required"}

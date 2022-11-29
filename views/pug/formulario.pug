@@ -1,0 +1,19 @@
+extends index.pug|
+
+block formulario 
+    h1 Alta de Producto
+       form.small-form(action="http://localhost:8080/", method="post")
+    
+        .form-group
+            label.control-label Producto
+            input(type="text",name="title").form-control
+        
+        .form-group
+            label.control-label Precio
+            input(type="text",name="price").form-control
+        
+        .form-group
+            label.control-label Imagen
+            input(type="text",name="thumbnail").form-control
+
+        button.btn.btn-primary Alta  
